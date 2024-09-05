@@ -4,82 +4,67 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Connected Watch Manager</title>
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet"> <!-- Google Material Icons -->
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <!-- Header -->
     <header>
-        <div class="logo">Connected Watch Manager</div>
+        <div class="logo">Watch Manager</div>
         <div class="status-icons">
-            <span class="battery-status">Battery: 85%</span>
-            <span class="connection-status">Connected</span>
+            <span class="material-icons">bluetooth_connected</span> 
+            <span>Connected</span>
         </div>
     </header>
-
-    <!-- Main Content -->
     <main>
-        <!-- Connection Status Tile -->
-        <section class="tile connection-status">
+        <div class="tile">
             <div class="tile-content">
-                <h2>Watch Connection Status</h2>
-                <div class="tile-info">
-                    <p>Status: <strong>Connected</strong></p>
-                    <p>Connection Type: Bluetooth</p>
-                    <p>Last Synced: 12:30 PM</p>
-                </div>
+                <h2>Connection Status</h2>
+                <p>Connected</p>
             </div>
-        </section>
-
-        <!-- BPM Tile -->
-        <section class="tile bpm">
+        </div>
+        <div class="tile">
             <div class="tile-content">
-                <h2>Current BPM</h2>
-                <p><strong>76 BPM</strong></p>
+                <h2>BPM</h2>
+                <p>72</p>
             </div>
-        </section>
-
-        <!-- Notification Settings Tile -->
-        <section class="tile notification-settings">
+        </div>
+        <div class="tile">
             <div class="tile-content">
                 <h2>Notification Settings</h2>
-                <div class="tile-info">
-                    <p>Notifications: <strong>ON</strong></p>
-                    <button>Manage Notifications</button>
-                </div>
+                <button>Manage</button>
             </div>
-        </section>
-
-        <!-- Heart Rate Tile -->
-        <section class="tile heart-rate">
+        </div>
+        <div class="tile">
             <div class="tile-content">
-                <h2>Heart Rate History</h2>
-                <div class="tile-info">
-                    <p>Resting: <strong>65 BPM</strong></p>
-                    <p>Active: <strong>120 BPM</strong></p>
-                </div>
+                <h2>Heart Rate</h2>
+                <p>Normal</p>
             </div>
-        </section>
-
-        <!-- Steps Tile -->
-        <section class="tile steps">
+        </div>
+        <div class="tile">
             <div class="tile-content">
-                <h2>Steps Today</h2>
+                <h2>Steps</h2>
                 <div class="tile-info">
-                    <p><strong>6,748 Steps</strong></p>
+                    <p>5500/10000</p>
                     <div class="progress-bar">
-                        <div class="progress" style="width: 67%;"></div>
+                        <div class="progress" style="width: 55%;"></div>
                     </div>
                 </div>
             </div>
-        </section>
+        </div>
     </main>
-
-    <!-- Footer -->
     <footer>
-        <div class="footer-icon">Home</div>
-        <div class="footer-icon">Statistics</div>
-        <div class="footer-icon">Settings</div>
-        <div class="footer-icon">Profile</div>
+        <div class="footer-icon">
+            <span class="material-icons">home</span>
+            <p>Home</p>
+        </div>
+        <div class="footer-icon">
+            <span class="material-icons">settings</span>
+            <p>Settings</p>
+        </div>
+        <div class="footer-icon">
+            <span class="material-icons">show_chart</span>
+            <p>Stats</p>
+        </div>
     </footer>
 </body>
 </html>
