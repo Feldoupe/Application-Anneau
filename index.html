@@ -3,10 +3,83 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href="styles.css" rel="stylesheet">
-    <title> Ring Manager</title>
+    <title>Connected Watch Manager</title>
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    
+    <!-- Header -->
+    <header>
+        <div class="logo">Connected Watch Manager</div>
+        <div class="status-icons">
+            <span class="battery-status">Battery: 85%</span>
+            <span class="connection-status">Connected</span>
+        </div>
+    </header>
+
+    <!-- Main Content -->
+    <main>
+        <!-- Connection Status Tile -->
+        <section class="tile connection-status">
+            <div class="tile-content">
+                <h2>Watch Connection Status</h2>
+                <div class="tile-info">
+                    <p>Status: <strong>Connected</strong></p>
+                    <p>Connection Type: Bluetooth</p>
+                    <p>Last Synced: 12:30 PM</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- BPM Tile -->
+        <section class="tile bpm">
+            <div class="tile-content">
+                <h2>Current BPM</h2>
+                <p><strong>76 BPM</strong></p>
+            </div>
+        </section>
+
+        <!-- Notification Settings Tile -->
+        <section class="tile notification-settings">
+            <div class="tile-content">
+                <h2>Notification Settings</h2>
+                <div class="tile-info">
+                    <p>Notifications: <strong>ON</strong></p>
+                    <button>Manage Notifications</button>
+                </div>
+            </div>
+        </section>
+
+        <!-- Heart Rate Tile -->
+        <section class="tile heart-rate">
+            <div class="tile-content">
+                <h2>Heart Rate History</h2>
+                <div class="tile-info">
+                    <p>Resting: <strong>65 BPM</strong></p>
+                    <p>Active: <strong>120 BPM</strong></p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Steps Tile -->
+        <section class="tile steps">
+            <div class="tile-content">
+                <h2>Steps Today</h2>
+                <div class="tile-info">
+                    <p><strong>6,748 Steps</strong></p>
+                    <div class="progress-bar">
+                        <div class="progress" style="width: 67%;"></div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer>
+        <div class="footer-icon">Home</div>
+        <div class="footer-icon">Statistics</div>
+        <div class="footer-icon">Settings</div>
+        <div class="footer-icon">Profile</div>
+    </footer>
 </body>
 </html>
