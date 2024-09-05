@@ -67,6 +67,7 @@ main {
   box-shadow: 0 4px 15px rgba(0, 0, 0, 0.7);
   width: calc(100% - 40px); /* Added margin */
   max-width: 320px; /* Smaller width */
+  margin-bottom: 5px;
   text-align: left;
   display: flex;
   justify-content: space-between;
